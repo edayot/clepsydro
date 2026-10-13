@@ -4,8 +4,6 @@ import TimelapseEngine from './modules/timelapse-engine/src/TimelapseEngineModul
 
 export default function App() {
 
-  const 
-
   const pressButton = async () => {
     await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS);
     await TimelapseEngine.start({ host: '192.168.1.109', port: 8080, intervalMs: 5000, totalShots: 5 });
